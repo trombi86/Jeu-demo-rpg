@@ -1,0 +1,16 @@
+﻿/* style.css */
+* { box-sizing: border-box; margin:0; padding:0; font-family: Arial, sans-serif; }
+body { background: linear-gradient(135deg,#0f172a,#1e293b); min-height:100vh; color:#fff; padding:16px; }
+header { text-align:center; margin-bottom:12px; }
+#controls { display:flex; gap:12px; justify-content:space-between; align-items:center; margin-bottom:12px; flex-wrap:wrap; }
+.resource-bars { display:flex; gap:10px; align-items:center; }
+#gold-bar, #elixir-bar { background:rgba(255,255,255,0.05); padding:8px 12px; border-radius:8px; }
+.actions { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+
+#main { display:flex; gap:12px; justify-content:center; align-items:flex-start; }
+#game-container { width:1024px; height:768px; background:#000; border:3px solid rgba(255,255,255,0.06); border-radius:6px; overflow:hidden; }
+#side { width:320px; max-height:768px; overflow:auto; background:rgba(255,255,255,0.03); padding:12px; border-radius:8px; }
+#story { height:300px; overflow:auto; padding:8px; background:rgba(0,0,0,0.15); border-radius:6px; margin-bottom:8px; }
+#build-queue, #hero-list { max-height:120px; overflow:auto; padding:8px; background:rgba(0,0,0,0.12); border-radius:6px; margin-bottom:8px; }
+select, button { padding:8px 10px; border-radius:6px; border: none; cursor:pointer; background:#0b1220; color:#fff; box-shadow: 0 2px 6px rgba(0,0,0,0.4); }
+button:hover { opacity:0.95; transform: translateY(-1px); transition: 0.12s; }

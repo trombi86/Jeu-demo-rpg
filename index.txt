@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Kings of Realms: Factions War - Démo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kings of Realms: Factions War — Démo</h1>
+    </header>
+
+    <div id="controls">
+        <div class="resource-bars">
+            <div id="gold-bar">Gold: <span id="gold-amount">0</span></div>
+            <div id="elixir-bar">Elixir: <span id="elixir-amount">0</span></div>
+        </div>
+
+        <div class="actions">
+            <select id="build-select">
+                <option>Townhall</option>
+                <option>Barracks</option>
+                <option>GoldMine</option>
+                <option>ElixirCollector</option>
+                <option>Walls</option>
+            </select>
+            <button onclick="build()">Construire / Upgrader</button>
+
+            <select id="faction-select">
+                <option>Gangs</option>
+                <option>Militaires</option>
+                <option>Cyborgs</option>
+                <option>AnimauxMod</option>
+                <option>Aliens</option>
+                <option>Orques</option>
+            </select>
+            <button onclick="trainHero()">Entraîner Héros</button>
+
+            <button onclick="raid()">Lancer Raid</button>
+            <button onclick="updateStatus()">Rafraîchir</button>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="game-container"></div>
+        <div id="side">
+            <h3>Histoire / Logs</h3>
+            <div id="story"></div>
+            <h3>File de construction</h3>
+            <div id="build-queue"></div>
+            <h3>Héros (liste)</h3>
+            <div id="hero-list"></div>
+        </div>
+    </div>
+
+    <!-- Phaser -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.min.js"></script>
+    <script src="game.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
