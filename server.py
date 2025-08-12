@@ -235,3 +235,4 @@ def import_session(session_id: str, payload: dict, request: Request):
 
 # ---- static files served from current dir (index.html...) ----
 app.mount("/", StaticFiles(directory=".", html=True), name="static")
+print('Hello')
